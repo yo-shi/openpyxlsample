@@ -2,11 +2,11 @@
 import openpyxl as px
 import os
 
-if not os.path.exists('debug'):
-    os.mkdir('debug')
+if not os.path.exists('output'):
+    os.mkdir('output')
 
 # Create new Workbook object.
 wb = px.Workbook()
 
 # Save Workbook with name.
-wb.save('./debug/new_file.xlsx')
+wb.save('./output/new_file.xlsx')
